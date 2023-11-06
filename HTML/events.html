@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms events</title>
+  </head>
+  <body>
+    <form action="" onsubmit="console.log('submit')" onreset="console.log('reset form')">
+      <label for="name">blur and focus example</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        onblur="console.log('Input field blurred now')"
+        onfocus="console.log('input is focus')"
+      />
+      <br /><br />
+      <hr />
+      <label for="">onchange example</label>
+      <input
+        type="text"
+        name=""
+        id=""
+        value="simple"
+        onchange="console.log('value changed')"
+        oninput="console.log('input is given')"
+      />
+      <br /><br />
+      <hr />
+      <label for="number">oninvalid and required</label>
+      <input
+        type="number"
+        name=""
+        id=""
+        title="charcter is not allowed"
+        required
+        oninvalid="console.log('invaild value')"
+        onselect="console.log('value selected')"
+      />
+      <br><br>
+      <hr>
+      <input type="search" name="" id="" onsearch="console.log('value search entered')">
+      
+
+      <input type="submit" value="submit" />
+      <input type="reset" value="reset">
+    </form>
+    <h2>onsubmit, onreset, onsearch, onselect, oninviled, oninput, onchange, required, onfocus, onblur, onset,
+         these are events of form events</h2>
+  </body>
+</html>
