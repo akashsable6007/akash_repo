@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo-Class selectors</title>
+    <h1>
+        this applises style on the different state of specific element
+    </h1>
+    <style>
+        /* selector:psuedo-class{
+            property:value;
+        } */
+        /* selector is ; a simple vse;lector
+            psuedo-class : active */
+        a:acitve{
+            color: rgb(0, 255, 72);
+            font-size: larger;
+        }
+        /*  hover selector */
+        a:hover{
+            color: yellow;
+            font-size: 78px;
+
+        }
+        div{
+            height: 50px;
+            width: 50px;
+            background-color: aqua;
+        }
+        div:hover{
+            height: 200px;
+            width: 200px;
+            background-color: pink;
+        }
+        /* link and visited  */
+        a:link {
+            color: black;
+            font-style: italic;
+
+        }
+        a:visited{
+            color: blue;
+
+        }
+        .input{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            border: 2px solid red;
+
+        }
+        input:hover{
+            height: 300px;
+            width: 500px;
+            background-color: pink;
+
+        }
+        input:checked{
+            height: 500px;
+            width: 500px;
+
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Sample link</a>
+    <div>
+        this is div 
+    </div>
+    <br>
+    <hr>
+    <input class="input" type="text" name="" id="">
+    <br>
+    <input type="radio" name="" id="">
+    <br>
+    <input type="checkbox" name="" id="">
+</body>
+</html>

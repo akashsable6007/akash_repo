@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo-Element</title>
+    <h1>
+        this applise styling to the specific part of html element
+    </h1>
+    <style>
+        /* selector::psuedo-element
+            property:value;
+             */
+        p::first-line{
+            color: aqua;
+        }     
+        p::first-letter{
+            color: blue;
+            font-size: 20px;
+        }     
+        #para::before{
+            content: '987666';
+        }
+        #para::after{
+            content: '9847463535245';
+        }
+        ::marker{
+            font-size: 30px;
+            color: greenyellow;
+        }
+        p::selection{
+            background-color: pink;
+            color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <!-- this applise styling to the specific part of html element -->
+    <!-- 1. first-line -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quae sequi, qui neque amet sint Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, recusandae quis. Sed laudantium quia officiis, consequatur voluptates nesciunt corporis totam accusamus? Obcaecati deleniti quod architecto excepturi aut! Dolorum, consectetur natus! sunt possimus aspernatur tenetur asperiores aliquid ipsa aut ad placeat quisquam accusamus ab minima! Magni in vitae dignissimos consequatur modi doloribus est earum omnis voluptatum ex. Culpa aliquid ad, et soluta id illum asperiores provident?
+        <br>
+        <p id="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, expedita.
+        </p>
+
+    <br><hr>
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ol>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    </p>
+</body>
+</html>

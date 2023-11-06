@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2d-Transformation properties</title>
+    <style>
+        div
+        {
+            position: relative;
+            top: 100px;
+            left: 100px;
+            height: 100px;
+            width: 300px;
+            background-color: blue;
+            border: 2px solid red;
+            color: white;
+            /* transform: translate(150px, 200px); */
+            /* transform: translateX(100px); */
+            /* transform: translatey(100px); */
+            /* transform: translatez(100px); */
+
+            /* transform: rotate(60deg); */
+            /* transform: rotateX('60deg'); */
+            /* transform: rotateY('60deg'); */
+            /* transform: rotateZ('60deg'); */
+            transform: skewX();
+        }
+        .demo
+        {
+            /* transform: rotate(-60deg); */
+
+            /* transform: scale(0.5, 0.5); */
+            /* transform: scaleX(0.5, 0.5); */
+            /* transform: scaleY(0.5, 0.5); */
+
+            /* transform: skewX(30deg); */
+            /* transform: skewY(30deg); */
+            /* transform: skew(20deg, 30deg); */
+
+            transform: matrix(0.5, 0.2, 0, 2, 10, 15);
+
+
+        }
+    </style>
+</head>
+<body>
+    <!-- 2d transformation : 2d and 3d (move, rotate, scale, skew) 
+    transforam property : 1) translate(x, y) 2) rotate 3) scale(w, h) 4) skew().skewX
+    5) matrix(scaleX, skewX, skewY, scaleY, translateX, translateY)-->
+    <div class="original">
+        translate example
+    </div>
+    <br><br><br>rb
+
+    <div class="demo">
+        this example of translate
+    </div>
+
+</body>
+</html>

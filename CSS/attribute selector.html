@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>attribute selectors</title>
+    <style>
+      /* element[attribute]{
+            property:value;
+
+        } */
+      a[target] {
+        color: red;
+      }
+      a[target="_blank"] {
+        color: blue;
+      }
+      p[class~="check"] {
+        border: 2px solid green;
+      }
+      p[class|="lorem"] {
+        border: 21px solid rgb(128, 0, 21);
+      }
+      p[title^="panda"] {
+        background-color: violet;
+      }
+      p[title$="cute-pandas"] {
+        text-decoration: line-through;
+      }
+      p[title*="happy"] {
+        font-family: cursive;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- it applise styling on the basis attributes and the value of attributes of html element
+        1.[attribute]
+        2.[attribute='value']
+        3.[attribute~='value']should contain this value
+        4.[attribute|='value']valuse should exact match or followed by the hypen(-)
+        5.[attribute^='value']the value should start with given value 
+        6.[attribute$='value']
+        7.[attribute*='value']-->
+
+    <a href="#">sample 1</a>
+    <a href="#" target="_self">sample 2</a>
+    <a href="" target="_blank">sam2</a>
+    <a href="" target="_top">sam 3</a>
+    <p class="check" title="panda">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+      obcaecati quam odio in quas eveniet maxime totam, incidunt explicabo
+      nulla, libero enim facere suscipit odit voluptatibus reprehenderit omnis
+      dicta earum ullam. Dolor ipsam explicabo vel assumenda laborum? Eius omnis
+      quae repudiandae distinctio voluptatibus nisi cum, eveniet maxime,
+      asperiores ea possimus!
+    </p>
+    <br />
+    <p class="lorem" title="panda-happy">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, iste
+      sit. Eveniet fugit ducimus voluptatibus reiciendis dignissimos id sapiente
+      aspernatur veritatis, officia excepturi a, at maxime delectus iste nihil
+      laudantium consequuntur sed ipsam magni laboriosam culpa quibusdam non?
+      Iure aperiam quas optio! Placeat ex ab maiores necessitatibus impedit
+      expedita dignissimos?
+    </p>
+    <br />
+    <p class="lorem-sample" title="cute-pandas">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, iste
+      sit. Eveniet fugit ducimus voluptatibus reiciendis dignissimos id sapiente
+      aspernatur veritatis, officia excepturi a, at maxime delectus iste nihil
+      laudantium consequuntur sed ipsam magni laboriosam culpa quibusdam non?
+      Iure aperiam quas optio! Placeat ex ab maiores necessitatibus impedit
+      expedita dignissimos?
+    </p>
+    <br />
+    <p class="happy">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aut sint
+      quibusdam unde ipsa quis at? Aliquid veritatis laborum qui asperiores
+      quibusdam eligendi voluptatem est, fugiat incidunt corrupti sapiente odit?
+      Molestias quidem vero sequi eos atque distinctio, quae suscipit cum
+      voluptas temporibus nesciunt doloribus perspiciatis possimus, unde
+      voluptatibus voluptate consectetur.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators selectors</title>
+    <style>
+        /* <!-- example of decendent selector --> */
+        div p{
+            color: red;
+            font-size: 25px;
+
+        }
+        /* exmple of child selectors  */
+        div>p{
+            color: aqua;
+        }
+        /* example of adjucent siblingss */
+        div+p {
+            color: blue;
+        }
+        /* example of general siblings */
+        div~p{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- selectors that are created using the realtion between element -->
+    <h1>decentance(space), child(>), adjucent siblings(+), general siblings(~) selectors are combinators selectors </h1>
+    grand
+    <hr>
+    
+    <!-- <div> -->
+        <!-- <p>sample para 1</p> -->
+        <!-- <p>sample para 2</p> -->
+        <div class="div1">
+            <p>para 1</p>
+            <p>para 1</p>
+            <section class="section2">
+                <p>para 3</p>
+                <p>para 4</p>
+            </section>
+        </div>
+        <p>para 5</p>
+        <p>para 6</p>
+
+    <!-- </div> -->
+
+</body>
+</html>

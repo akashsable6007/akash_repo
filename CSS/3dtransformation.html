@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d-transformation properties</title>
+    <style>
+        .demo
+        {
+            height: 100px;
+            width: 300px;
+            margin-top: 50px;
+           margin-left: 100px;
+            background-color: blue;
+            border: 2px solid red;
+            color: aliceblue;
+            /* transform: rotate(30deg); */
+            /* transform: rotateX('30deg'); */
+            /* transform: rotateY('30deg'); */
+            /* transform: rotateZ('30deg'); */
+            transform: rotate3d(0, 1, 0, 45deg);
+
+            /* transform: translateX(30px); */
+            /* transform: translateY(20px); */
+            transform: translate(20px, 30px);
+        }
+
+    </style>
+</head>
+<body>
+     <!-- 3d transformation : 3d (move, rotate, scale, skew) 
+    transforam property : 1) translate(x, y) 2) rotate(X, Y, Z) 3) scale(w, h) 4) skew().skewX
+    5) matrix(scaleX, skewX, skewY, scaleY, translateX, translateY)-->
+    <div class="demo">
+        this is example of 3d transformation property
+    </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders</title>
+    <style>
+        .solid{
+            border-style: solid;
+            height: 200px;
+            width: 200px;
+            border-style: solid;
+            border-width: thin;
+            border-width: medium;
+            border-width: thick; 
+            border-width: 15px;
+            /* border-width: 5px 10px 15px 20px; */
+            /* border-width: 5px 10px 15px; */
+            /* border-width: 10px 12px; */
+            border-color: red;
+            /* border-color: red blue orange green; */
+            /* border-color: aqua yellow yellowgreen; */
+            /* border-color: red green; */
+            /* short hand properties: width style color  */
+            border: 10px solid green;
+            border-radius: 8px;
+            
+        }
+        .dotted{
+            border-style: dotted;
+            height: 200px;
+            width: 200px;
+            border-width: 20px ;
+            border-style: solid;
+            border-top-style: dotted;
+            /* like this we can do for all sides */
+            border-color: red;
+        }
+        .dashed{
+            border-style: dashed;
+        }
+        .double{
+            border-style: double;
+        }
+        .groove{
+            border-style: groove;
+        }
+        .ridge{
+            border-style: ridge;
+        }
+        .inset{
+            border-style: inset;
+        }
+        .outset{
+            border-style: outset;
+        }
+        .none{
+            border-style: none;
+        }
+        .hidden{
+            border-style: hidden;
+        }
+        button:hover{
+            border-style: hidden;
+        }
+        .mixed{
+            /* border-style: solid dotted dashed none; */
+            /* border-style: top right down left  */
+            /* border-style: solid dotted dashed none */
+            /* border-style: top right and left bottom */
+            /* border-style: solid dotted dashed */
+            /* border-style: top&down rt&ft */
+            border-style: solid dashed;
+         }
+        
+
+    </style>
+
+</head>
+<body>
+    <div class="solid">solid border</div>
+    <br>
+    <div class="dotted">dotted border</div>
+    <br>
+    <div class="dashed">dashed border</div>
+    <br>
+    <div class="double">double border</div>
+    <br>
+    <div class="groove">groove border</div>
+    <br>
+    <div class="ridge">ridge border</div>
+    <br>
+    <div class="inset">inset border</div>
+    <br>
+    <div class="outset">outset border</div>
+    <br>
+    <div class="none">none</div>
+    <br>
+    <button class="hidden">button</button>
+    <br>
+    <div class="mixed">all side border</div>
+    <br>
+</body>
+</html>
