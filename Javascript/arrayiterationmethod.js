@@ -100,3 +100,4 @@ console.log(foundIndex);
 const array1 = [10, 20, 30, 20, 40, 50, 88, 20]
 console.log(array1.includes(40)); //true 
 
+
