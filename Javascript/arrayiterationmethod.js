@@ -101,3 +101,20 @@ const array1 = [10, 20, 30, 20, 40, 50, 88, 20]
 console.log(array1.includes(40)); //true 
 
 
+//+++++++++++++ Duplicate item remove by using this method 
+// This is one +++++++++++++++++++++++++++++++++++++++++++ Set() method
+let char = ['a', 'b', 'a', 'a', 'c', 'd', 'e', 'f', 'b'];
+let char2 = new Set(char);
+console.log(char2);
+
+// by sprade operator [...new Set()]
+let char3 = [...new Set(char)]; // it comes in array formate .
+console.log(char3);
+
+//another method is use 
+//+++++++++++++++++++++++ filter() whit index of method
+let data = char.filter((item,i)=>{
+    return char.indexOf(item) === i;
+})
+console.log(data);
+ 
