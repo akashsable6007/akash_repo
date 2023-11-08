@@ -117,4 +117,13 @@ let data = char.filter((item,i)=>{
     return char.indexOf(item) === i;
 })
 console.log(data);
- 
+
+// Includes() method to remove duplicates 
+let uniqueEle = [];
+char.forEach((ele, i) => {
+    if(!uniqueEle.includes(ele))
+    {
+        uniqueEle.push(ele)
+    }
+})
+ console.log(uniqueEle);
