@@ -6,7 +6,7 @@
 // Scope level diff 
 // >>>>>>>>>>>>>>>> let,const  :> block level scope 
 // >>>>>>>>>>>>>>>> Var :> function level scope 
-
+var z = 90; // global variable 
 function test() {
     let a = 10;
     if(a < 20){
