@@ -1,1 +1,55 @@
 <p>{{data}}</p>
+
+<div>
+    {{amount}}
+</div>
+
+<!-- //we can pass the function in interpolation -->
+<div>
+    {{test()}}  
+</div>
+
+<!-- asignment is not possible with interpolation   -->
+<!-- "=" is called assignment operator and it assign the value to the variable/property
+  -->
+<!-- <div>
+    {{schoolName = "pvpit"}}
+</div> -->
+
+<!-- "==" equality operator -->
+<!-- we can use equality operator with interpolation in form of true/false -->
+<!-- equality only check data value-->
+<!-- it compaires values only -->
+<!-- overlapping og num and string datatype error -->
+<div>{{amount == 83736354}}</div> 
+
+<!-- === is check data and dataypes aslo || it check dataype as well as value-->
+<!-- this is also equality operator it compaire value as well as datatypes  -->
+<div>{{amount === 9848473}}</div>
+
+
+<!-- we can write expression in interpolation  -->
+<div>
+    {{90*6}}
+</div>
+
+<div>
+    {{ismatch}}
+</div>
+
+<!-- in interpolation we cannot do increament and decreament -->
+<!-- <p>{{x++}}</p> -->
+
+<!-- example of property binding [] -->
+<input type="text" [value]="name">Enter name 
+
+<button (click)="clickEvent()"> click event</button><br>
+{{clickEventData}} <br>
+
+
+<!-- Two Way DataBinding  -->
+<!-- ngModel deriectives  -->
+
+<input type="text " [(ngModel)] = "city"> enter city <br><br>
+entered city = {{city}}
+
