@@ -37,4 +37,8 @@ export class HomeComponent {
     
   }
 
+  directives(){
+    this.router.navigateByUrl('directives')
+  }
+
 }
