@@ -41,4 +41,6 @@ export class HomeComponent {
     this.router.navigateByUrl('directives')
   }
 
+  
+
 }

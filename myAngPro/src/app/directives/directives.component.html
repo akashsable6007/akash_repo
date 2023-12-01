@@ -1,5 +1,19 @@
 <p>directives works!</p>
 
-<!-- <div>
-    <p>{{}}</p>
-</div> -->
+<div *ngIf="isShow">
+    <p>{{city}}</p>
+</div>
+
+<div>
+    {{cars}}
+</div>
+
+<div *ngFor="let carName of cars">
+    {{carName}}
+</div>
+
+<div class="container" *ngIf="divShow">
+
+</div>
+<br>
+<button (click)="toggle()">toggle</button>
