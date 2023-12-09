@@ -17,3 +17,24 @@
 </div>
 <br>
 <button (click)="toggle()">toggle</button>
+
+<div [ngSwitch]="fruits">
+    <div *ngSwitchCase="'mango'">my fav is mango</div>
+    <div *ngSwitchCase="'pinple'">my fav is pineole</div>
+    <div *ngSwitchCase="'aamba'">my fav is aamba</div>
+</div>
+
+<div class="info">
+    i like pune
+</div>
+
+<!-- <div [ngclass]="{'adminUser' : user == 'Admin',  'mentorUser' : user == 'Mentor'}">
+    Welcome to akash feed
+</div> -->
+
+<!-- <div [class.adminCls]="user == 'Admin"
+     [class.adminCls]="user == 'Admin"
+    [class.adminCls]="user == 'Admin" >
+    welcome
+</div> -->
+

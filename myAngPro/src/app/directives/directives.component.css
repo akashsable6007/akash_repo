@@ -4,3 +4,14 @@
     width: 100px;
     background-color: aqua;
 }
+.info{
+    color: red;
+    border: 1px solid blue;
+}
+
+/* .adminCls{
+    background-color: bisque;
+}
+.mentorCls{
+    background-color: pink;
+} */

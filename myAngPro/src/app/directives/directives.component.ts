@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./directives.component.css']
 })
 export class DirectivesComponent {
+  // user:string ="Admin";
 
 
   //directives are used to manipulate the DOM. By using Angular directives, 
@@ -30,11 +31,13 @@ city="pune";
 isShow=true  // null/undefined/false sathi ans must be ;>> false 
 
 cars = ["i10", "i20","swift", "maruti" ]
+fruits="mango";
 
 divShow= true
 toggle(){
   this.divShow =! this.divShow;
 }
+
 
 
 }
