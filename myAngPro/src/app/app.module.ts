@@ -9,6 +9,12 @@ import { SignupComponent } from './signup/signup.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { FormsModule } from '@angular/forms';
 import { DirectivesComponent } from './directives/directives.component';
+import { LifecyclehooksComponent } from './lifecyclehooks/lifecyclehooks.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { SubComponent } from './sub/sub.component';
+import { Sub1Component } from './sub1/sub1.component';
+import { Sub2Component } from './sub2/sub2.component';
 
 
 @NgModule({
@@ -19,6 +25,12 @@ import { DirectivesComponent } from './directives/directives.component';
     SignupComponent,
     DatabindingComponent,
     DirectivesComponent,
+    LifecyclehooksComponent,
+    ParentComponent,
+    ChildComponent,
+    SubComponent,
+    Sub1Component,
+    Sub2Component,
   
   ],
   imports: [

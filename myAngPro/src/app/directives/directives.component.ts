@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-directives',
@@ -6,9 +7,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./directives.component.css']
 })
 export class DirectivesComponent {
+
+// 1.Component Directives
+user:string = "akashsable";
+city="pune";
+isShow=true  // null/undefined/false sathi ans must be ;>> false 
+
+cars = ["i10", "i20","swift", "maruti" ]
+fruits="mango";
+
+divShow= true
+toggle(){
+  this.divShow =! this.divShow;
+}
+
+constructor ( private dataService: DataService){
+
+}
+
   // user:string ="Admin";
-
-
   //directives are used to manipulate the DOM. By using Angular directives, 
   //you can change the appearance, behavior or a layout of a DOM element.
 // 1.Component Directives
@@ -26,16 +43,12 @@ export class DirectivesComponent {
 // ngClass Directive: The ngClass directive is used to add or remove CSS classes to an HTML element.
 // ngStyle Directive: The ngStyle directive facilitates you to modify the style of an HTML element using the expression. You can also use ngStyle directive to dynamically change the style of your HTML element.
  
-// 1.Component Directives
-city="pune";
-isShow=true  // null/undefined/false sathi ans must be ;>> false 
 
-cars = ["i10", "i20","swift", "maruti" ]
-fruits="mango";
 
-divShow= true
-toggle(){
-  this.divShow =! this.divShow;
+getdata(){
+ this.user = this.dataService.userName;
+ console.warn("userName ", this.user);
+ 
 }
 
 

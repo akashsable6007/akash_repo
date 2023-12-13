@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';  //import section 
+import { DataService } from '../data.service';
 
 @Component({             // component directive: metadata of component
   selector: 'app-home',
@@ -19,9 +20,12 @@ export class HomeComponent {
     name3: any;
 
 
-  constructor(private router: Router){} //constructor section 
+  constructor(private router: Router, private dataService : DataService){} //constructor section 
 
 
+  ngOnInit(){
+    this.dataService.userName = this.name;
+  }
   //lifecycle hooks, methods  
   signUpComp(){
     this.name3 = "omsairam";

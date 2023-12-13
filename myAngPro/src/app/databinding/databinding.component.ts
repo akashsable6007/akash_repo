@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { DataService } from '../data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-databinding',
@@ -6,6 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./databinding.component.css']
 })
 export class DatabindingComponent {
+  constructor( private dataService : DataService, private router: Router){
+
+  }
+
 // DB: communication between component and the DOM
 // Types of databinding 
 
@@ -53,6 +59,12 @@ test(){
  // 3. Event binding ()
  clickEvent(){
   this.clickEventData = "8474748"
+ }
+
+
+ assignVal(){
+ this.dataService.userName = "harshda";
+ this.router.navigateByUrl("lifecyclehooks")
  }
 
 }
