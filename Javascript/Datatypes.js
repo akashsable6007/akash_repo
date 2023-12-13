@@ -32,8 +32,7 @@ city = "mumbai";
 console.log('city 2', city);
 
 //++++++++++++++++++ NUMBER DATATYPES +++++++++++++++++++++++++++//
-
-var marks = 90; //number
+ 
 console.log(marks);
 
 var MobileNo = "9158385007"; // if we apply double cots here that time number is behave like string at output.
@@ -72,7 +71,7 @@ console.log(typeof(myName)); // null/ array value typeof will return >> object.
 
 let a = 9999999999999999;
 console.log(a);
-
+ 
 
 //************************************* OBJECTS NON-PRIMITIVE DATATYPES *****************************************/
 

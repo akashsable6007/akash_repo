@@ -22,7 +22,7 @@ console.log(test());
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-// Redeclaration is not possible with let and var keyword 
+// Redeclaration is not possible with let and const keyword 
 // let city = "pune";
 // let city = "mumbai";
 
