@@ -13,7 +13,7 @@ export class Sub1Component {
 
   ngOnInt(){
     this.dataService.data.subscribe(res=>{
-      this.data1
+      this.data1;
     })
   }
 }
